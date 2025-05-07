@@ -22,13 +22,13 @@ O frontend possui **controle de permissões baseado em cargos (Roles)**, garanti
 ## 📸 Imagens de exemplo
 
 ### 1. Tela de login com auth JWT
-![screenshot_1](src/assets/imgs/screenshot_1.jpg)
+<img src="src/assets/imgs/screenshot_1.jpg" width="250" height="auto" />
 
 ### 2. Escaneamento do produto usando QuaggaJs
-![screenshot_2](src/assets/imgs/screenshot_2.jpg)
+<img src="src/assets/imgs/screenshot_2.jpg" width="250" height="auto" />
 
 ### 3. Resultado do escaneamento realizado na api Cosmos Bluesoft, GTIN/EAN
-![screenshot_3](src/assets/imgs/screenshot_3.jpg)
+<img src="src/assets/imgs/screenshot_3.jpg" width="250" height="auto" />
 
 
 ## 🌐 Integração
