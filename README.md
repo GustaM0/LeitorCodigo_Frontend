@@ -5,7 +5,7 @@ Este é o repositório do frontend da aplicação **LeitorCódigo**, desenvolvid
 ## ☁️ Deploy
 
 A aplicação está hospedada na plataforma **Vercel**, e pode ser acessada pelo link:  
-🔗 [https://leitorcodigo-frontend.vercel.app](https://)
+🔗 [https://leitorcodigo-frontend.vercel.app](https://leitor-codigo-frontend.vercel.app/)
 
 ## 🚀 Tecnologias utilizadas
 

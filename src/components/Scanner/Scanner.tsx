@@ -76,13 +76,18 @@ const Scanner = ({ detectedCode, closeScanner }: { detectedCode: (code: string) 
     // Use Effect ====================================================================
     useEffect(() => {
         getCameras();
-        setScannerOn(true);
+        setTimeout(() => {
+            setScannerOn(true);
+        }, 0);
     }, [])
 
     // Scanner Options ===============================================================
     const restartScanner = () => {
         Quagga.stop();
-        Quagga.start();
+        setScannerOn(false);
+        setTimeout(() => {
+            setScannerOn(true);
+        }, 0);
     }
 
     const stopScanner = () => {
