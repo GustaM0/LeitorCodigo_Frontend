@@ -1,0 +1,7 @@
+.bottom-menu-container {
+    height: calc(100lvh - 120px - 60px);
+    backdrop-filter: blur(10px);
+    
+    animation: fadeInUp;
+    animation-duration: 0.5s;
+}

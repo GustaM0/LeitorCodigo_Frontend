@@ -1,0 +1,82 @@
+.button-code1 {
+    background-color: var(--green--secondary--color);
+    border: none;
+    border-radius: 12px;
+    color: var(--color-secondary-light);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: var(--yellow--primary--color);
+        color: var(--color-secondary);
+    }
+
+    &:active {
+        transform: scale(0.90);
+    }
+}
+
+.button-code2 {
+    & .custom-button {
+        cursor: pointer;
+        outline: none;
+        transition: transform 0.3s ease;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+    
+    & .custom-button:hover {
+        transform: rotate(90deg);
+    }
+    
+    & .custom-icon {
+        fill: none;
+        stroke: #a1a1aa; /* zinc-400 */
+        transition: all 0.3s ease;
+    }
+    
+    & .custom-button:hover .custom-icon {
+        fill: #27272a; /* zinc-800 */
+    }
+    
+    & .custom-button:active .custom-icon {
+        stroke: #e4e4e7; /* zinc-200 */
+        fill: #52525b;   /* zinc-600 */
+        transition-duration: 0s;
+    }
+}
+
+/* Button Code 3 Mercado Livre */
+.button-code3 {
+    button {
+        max-width: 350px;
+        display: flex;
+        padding: 0.5rem 1.4rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        vertical-align: middle;
+        align-items: center;
+        border-radius: 0.5rem;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        gap: 0.75rem;
+        color: rgb(65, 63, 63);
+        background-color: #fff;
+        cursor: pointer;
+        transition: all .6s ease;
+    }
+    
+    .button svg {
+        height: 24px;
+    }
+    
+    button:hover {
+        transform: scale(1.02);
+    }
+}

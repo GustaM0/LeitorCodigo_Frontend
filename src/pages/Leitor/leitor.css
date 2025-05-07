@@ -1,0 +1,50 @@
+.leitor-container-box {
+    /* max-width: 500px;
+    max-height: 700px; */
+    /* border-radius: 8px; */
+    /* width: 100%; */
+    height: 100%;
+    overflow-y: auto;
+    background-color: var(--color-secondary-background);
+    transition: all 0.3s ease-in-out;
+    /* padding: 20px; */
+}
+
+.leitor-header-box {
+    /* max-width: 400px;
+    width: 100%;*/
+    padding: 20px 20px;
+    background-color: var(--green--secondary--color);
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+
+.scanner-container{
+    position: relative;
+    width: 100%;
+    /* max-width: 640px; */
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    
+    video {/* Deixa o vídeo fixo no fundo */
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100% !important;
+        height: auto !important;
+        z-index: -1;
+        /* object-fit: cover; */
+    }
+    canvas.drawingBuffer {/* Deixa o canvas sobreposto ao vídeo 'Estava com problemas de posicionamento sem isto' */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 2;
+        pointer-events: none;
+    }
+}

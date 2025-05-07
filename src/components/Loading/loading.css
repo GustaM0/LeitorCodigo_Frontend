@@ -1,0 +1,183 @@
+.custom-loader-default {
+
+    .custom-loader {
+        width: 50px;
+        height: 50px;
+        --c: radial-gradient(farthest-side,#000000 92%,#0000);
+        background: var(--c) 50%  0, 
+        var(--c) 50%  100%, 
+        var(--c) 100% 50%, 
+        var(--c) 0    50%;
+        background-size: 10px 10px;
+        background-repeat: no-repeat;
+        animation: s8 1s infinite;
+        position: relative;
+    }
+    
+    .custom-loader::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        margin: 3px;
+        background: repeating-conic-gradient(#0000 0 35deg,#000000 0 90deg);
+        -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 3px),#000 0);
+        mask: radial-gradient(farthest-side,#0000 calc(100% - 3px),#000 0);
+        border-radius: 50%;
+    }
+
+    /* lOADER 2 */
+    /* From Uiverse.io by seyed-mohsen-mousavi */ 
+    .loader__btn {
+        border: none;
+        background-color: white;
+        padding: 10px 20px 10px 20px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 15px;
+        border-radius: 12px;
+        --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+        0 8px 10px -6px rgb(0 0 0 / 0.1);
+        --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+        0 8px 10px -6px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+        var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+        cursor: wait;
+    }
+    
+    .loader {
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-left-color: transparent;
+        border-radius: 50%;
+    }
+    
+    .loader {
+        border: 4px solid rgba(0, 0, 0, 0.1);
+        border-left-color: transparent;
+        width: 23px;
+        height: 23px;
+        animation: spin89345 1s linear infinite;
+    }
+}
+@keyframes spin89345 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes s8 {
+
+    100% {
+    transform: rotate(.5turn)
+    }
+}
+
+/* Loader 2 */
+/* From Uiverse.io by G4b413l */ 
+.three-body {
+    --uib-size: 35px;
+    --uib-speed: 0.8s;
+    --uib-color: var(--green--primary--color);
+    position: relative;
+    display: inline-block;
+    height: var(--uib-size);
+    width: var(--uib-size);
+    animation: spin78236 calc(var(--uib-speed) * 2.5) infinite linear;
+}
+
+.three-body__dot {
+    position: absolute;
+    height: 100%;
+    width: 30%;
+}
+
+.three-body__dot:after {
+    content: '';
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: var(--uib-color);
+    border-radius: 50%;
+}
+
+.three-body__dot:nth-child(1) {
+    bottom: 5%;
+    left: 0;
+    transform: rotate(60deg);
+    transform-origin: 50% 85%;
+}
+
+.three-body__dot:nth-child(1)::after {
+    bottom: 0;
+    left: 0;
+    animation: wobble1 var(--uib-speed) infinite ease-in-out;
+    animation-delay: calc(var(--uib-speed) * -0.3);
+}
+
+.three-body__dot:nth-child(2) {
+    bottom: 5%;
+    right: 0;
+    transform: rotate(-60deg);
+    transform-origin: 50% 85%;
+}
+
+.three-body__dot:nth-child(2)::after {
+    bottom: 0;
+    left: 0;
+    animation: wobble1 var(--uib-speed) infinite
+    calc(var(--uib-speed) * -0.15) ease-in-out;
+}
+
+.three-body__dot:nth-child(3) {
+    bottom: -5%;
+    left: 0;
+    transform: translateX(116.666%);
+}
+
+.three-body__dot:nth-child(3)::after {
+    top: 0;
+    left: 0;
+    animation: wobble2 var(--uib-speed) infinite ease-in-out;
+}
+
+@keyframes spin78236 {
+    0% {
+    transform: rotate(0deg);
+    }
+
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+@keyframes wobble1 {
+    0%,
+    100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+    }
+
+    50% {
+    transform: translateY(-66%) scale(0.65);
+    opacity: 0.8;
+    }
+}
+
+@keyframes wobble2 {
+    0%,
+    100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+    }
+
+    50% {
+    transform: translateY(66%) scale(0.65);
+    opacity: 0.8;
+    }
+}

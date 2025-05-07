@@ -1,0 +1,54 @@
+.bottom-bar-container{
+    /* From Uiverse.io by faxriddin20 */ 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* padding: 0 10px; */
+    & .button-container {
+        background-color: var(--green--primary--color);
+        display: flex;
+        /* width: 100%; */
+        width: calc(100% - 20px);
+        min-width: 300px;
+        max-width: 1000px;
+        margin: 0 10px 10px;
+        height: 50px;
+        z-index: 1;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 10px;
+    }
+    & .button {
+        outline: 0 !important;
+        border: 0 !important;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        transition: all ease-in-out 0.3s;
+        cursor: pointer;
+    }
+
+    & .button:hover {
+        transform: translateY(-3px);
+    }
+
+    & .icon {
+        font-size: 20px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .bottom-bar-container {
+        & .button-container {
+            background-color: var(--green--primary--color);
+        }
+        /* & .button {
+            color: #000;
+        } */
+    }
+}
