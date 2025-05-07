@@ -19,6 +19,18 @@ A aplicação está hospedada na plataforma **Vercel**, e pode ser acessada pelo
 
 O frontend possui **controle de permissões baseado em cargos (Roles)**, garantindo que diferentes tipos de usuários tenham acesso apenas às funcionalidades correspondentes às suas permissões.
 
+## 📸 Imagens de exemplo
+
+### 1. Tela de login com auth JWT
+![screenshot_1](src/assets/imgs/screenshot_1.jpg)
+
+### 2. Escaneamento do produto usando QuaggaJs
+![screenshot_2](src/assets/imgs/screenshot_2.jpg)
+
+### 3. Resultado do escaneamento realizado na api Cosmos Bluesoft, GTIN/EAN
+![screenshot_3](src/assets/imgs/screenshot_3.jpg)
+
+
 ## 🌐 Integração
 
 Este frontend se comunica diretamente com a API hospedada no backend disponível no repositório:  
